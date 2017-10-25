@@ -1,0 +1,25 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^pattayahummus\.com$ [OR]
+# RewriteCond %{HTTP_HOST} ^www\.pattayahummus\.com$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "http\:\/\/www\.pattayahummus\.com" [R=301,L]
+
+# RewriteCond %{REQUEST_URI} !^/index.html$
+# RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js)$
+# RewriteCond %{REQUEST_URI} !^/gallery/.*$
+# RewriteCond %{REQUEST_URI} !^/contactus/.*$
+# RewriteCond %{REQUEST_URI} !^/menu/.*$
+# RewriteRule .* /index.html [R=302]
+
+DirectoryIndex index.html
+
+# RewriteCond %{REQUEST_URI} ^/gallery/*$
+# RewriteRule ^/gallery/*$ /gallery/index.html [L,R=302]
+# RewriteRule ^/contactus/*$ /contactus/index.html [L,R=302]
+# RewriteRule ^/menu/*$ /menu/index.html [L,R=302]
+
+# Options All -Indexes
+
+

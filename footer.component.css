@@ -1,0 +1,29 @@
+.top-header{
+    height: 30px;
+    background-image: url("assets/images/lines.gif");
+    background-repeat: repeat-x;
+    
+}
+.footer {
+    background-image: url("assets/images/hummus-logo-sm.gif");
+    background-repeat: repeat-x;
+    padding-top: 100px;
+}
+.footer-body {
+    
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.footer-body h3{
+    padding: 15px;
+    margin: 15px;
+    font-size: 18px;
+    font-family: 'Arial Narrow', sans-serif;
+    color: blue;
+    text-transform: uppercase;
+}
+/*  text-shadow: 2px 1px 4px yellow;
+background-image: url("assets/images/lines.gif");
+    background-repeat: repeat-x;
+*/

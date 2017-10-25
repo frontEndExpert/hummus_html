@@ -1,0 +1,38 @@
+.menu {
+    background-image: url('../assets/images/hummus-bg2.gif');
+    background-repeat: repeat-x repeat-y;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.bgwhite {
+    background-color: white;
+}
+.row div{
+    
+    font-size: 18px;
+
+}
+.menu2{
+    background-color: white;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.tocenter {
+    text-align: center;
+}
+table {
+    background-color: white;
+}
+th {
+    font-size: 20px;
+}
+td {
+    font-weight: bold;
+    font-size: 18px;
+}
+mark {
+    color: rgb(18, 0, 97);
+    
+    font-weight: 700;
+    line-height: 40px;
+}

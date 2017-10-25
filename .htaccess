@@ -1,0 +1,22 @@
+#RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^pattayahummus\.com$ 
+#RewriteRule ^/?$ "http\:\/\/www\.pattayahummus\.com" [R=301,L]
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+    RewriteCond %{REQUEST_FILENAME} -s [OR]
+    RewriteCond %{REQUEST_FILENAME} -l [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^.*$ - [NC,L]
+
+    RewriteRule ^(.*) /index.html [NC,L]
+
+RewriteCond %{HTTP_HOST} !^www\.pattayahummus\.com$ [NC]
+RewriteRule .? http://www.pattayahummus.com%{REQUEST_URI} [R=301,L]
+</IfModule>
+DirectoryIndex index.html
+# Options All -Indexes
+
+
